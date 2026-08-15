@@ -26,33 +26,47 @@
 // console.log(array);
 
 
+// for loop 
 
 
-function checking (arr){
-  let same = arr[0];
+
+// function checking (arr){
+//   let same = arr[0];
   
-  let bool = [];
+//   let bool = [];
   
-  for (i = 0; i<arr.length; i++){
-    let result = same - arr[i]
-    if ( result === 0){
-      bool.push(0)
+//   for (i = 0; i<arr.length; i++){
+//     let result = same - arr[i]
+//     if ( result === 0){
+//       bool.push(0)
       
-
-    
-    }
-    else {
-      bool.push(result);
-    }
+//     }
+//     else {
+//       bool.push(result);
+//     }
      
+//   }
+
+//    return bool;
+// }
+// console.log(checking([1,1,1,2,4]));
+
+
+
+// Find the minimum 
+
+
+function minimum (arr) {
+  let first = arr[0]
+  for (let i=0; i<arr.length; i++){
+    if (arr[i] < first){
+      first = arr[i];
+    }
   }
-
-   return bool;
-
-
+  return first;
 }
 
-console.log(checking([1,1,1,2,4]));
+console.log(minimum([1,3,4,7,4,2]));
 
 
 
