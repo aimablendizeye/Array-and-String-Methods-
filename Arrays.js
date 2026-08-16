@@ -56,17 +56,37 @@
 // Find the minimum 
 
 
-function minimum (arr) {
-  let first = arr[0]
-  for (let i=0; i<arr.length; i++){
-    if (arr[i] < first){
-      first = arr[i];
-    }
-  }
-  return first;
+// function minimum (arr) {
+//   let first = arr[0]
+//   for (let i=0; i<arr.length; i++){
+//     if (arr[i] < first){
+//       first = arr[i];
+//     }
+//   }
+//   return first;
+// }
+
+// console.log(minimum([1,3,4,7,4,2]));
+
+
+
+
+// Checking if the element are consecutive 
+
+
+function consecutive (arr) {
+  if (arr.length <= 1) return true;
+
+  return arr.every ((n, index) => n === arr[0] + index);
 }
 
-console.log(minimum([1,3,4,7,4,2]));
+console.log(consecutive([1,2,3,4,5]));
+
+
+
+
+
+
 
 
 
