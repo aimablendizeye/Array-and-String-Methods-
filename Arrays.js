@@ -84,6 +84,39 @@ console.log(consecutive([1,2,3,4,5]));
 
 
 
+// Counting the Even numbers inside an array using Loop 
+
+function even (nums) {
+  let count = 0;
+  for (let i=0; i<nums.length; i++){
+    if (nums[i] %2 ===0) {
+       count ++;
+    }
+  }
+  
+    return count;
+}
+
+console.log(even([1,2,3,4,5,6]));
+
+
+
+// returning New Array by multiplying 3 
+
+
+function multipleBy (numbers) {
+  let newArr = [];
+  for (let i=0; i<numbers.length; i++){
+     newArr.push(numbers[i] *3);
+  }
+return newArr;
+ 
+}
+
+console.log(multipleBy([1,2,3,4,5]));
+
+
+
 
 
 
