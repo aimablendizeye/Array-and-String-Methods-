@@ -165,18 +165,34 @@
 
 //  Counting Number of even number in an Array  using for Loop 
 
-function countingEven (arr) {
-  let count = 0;
+// function countingEven (arr) {
+//   let count = 0;
 
-  for (let n=0; n<arr.length; n++){
-    if (arr[n] % 2===0) {
-      count ++;
-    }
-  }
-  return count;
+//   for (let n=0; n<arr.length; n++){
+//     if (arr[n] % 2===0) {
+//       count ++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(countingEven([1,2,3,4,5,6,7,8]));
+
+
+// reverse word without using reverse method 
+
+function reversing (str) {
+  let newOrd ="";
+   for (let s=str.length-1; s>=0; s--){
+          newOrd += str[s];
+   }
+
+   return newOrd;
+   
 }
 
-console.log(countingEven([1,2,3,4,5,6,7,8]));
+console.log(reversing("aimable"));
+
 
 
 
