@@ -158,7 +158,7 @@ function Siblings (arr) {
       );
 }
 
-Siblings(["Yvette","Aimable" , "Benjamin" , "Reponse","Honette","Manzi"]);
+Siblings(["Gerard B.","Nyirarukundo Ch.","Yvette","Aimable" , "Benjamin" , "Reponse","Honette","Manzi"]);
 
 
 
