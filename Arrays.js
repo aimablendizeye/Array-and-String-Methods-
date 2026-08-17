@@ -138,15 +138,15 @@
 
 // 1. filter With 2 parameter 
 
-function track (n) {
-  return n.filter ((value , index) => 
-    index %2===0)
-     .map (value=> value *3);
+// function track (n) {
+//   return n.filter ((value , index) => 
+//     index %2===0)
+//      .map (value=> value *3);
   
-  ;
-}
+//   ;
+// }
 
-console.log(track([1,2,3,4,5,6]));
+// console.log(track([1,2,3,4,5,6]));
 
 
 // 2. map with 2 parameter 
@@ -158,7 +158,7 @@ function Siblings (arr) {
       );
 }
 
-console.log (Siblings(["Yvette","Aimable" , "Benjamin" , "Reponse","Honette","Manzi"]));
+Siblings(["Yvette","Aimable" , "Benjamin" , "Reponse","Honette","Manzi"]);
 
 
 
