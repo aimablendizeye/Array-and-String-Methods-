@@ -151,14 +151,39 @@
 
 // 2. map with 2 parameter 
 
-function Siblings (arr) {
-      let result = arr.map ((name , number ) =>  {
-          console.log(`${number +1} : ${name}`) ;
-      }
-      );
+// function Siblings (arr) {
+//       let result = arr.map ((name , number ) =>  {
+//           console.log(`${number +1} : ${name}`) ;
+//       }
+//       );
+// }
+
+// Siblings(["Gerard B.","Nyirarukundo Ch.","Yvette","Aimable" , "Benjamin" , "Reponse","Honette","Manzi"]);
+
+
+
+
+//  Counting Number of even number in an Array  using for Loop 
+
+function countingEven (arr) {
+  let count = 0;
+
+  for (let n=0; n<arr.length; n++){
+    if (arr[n] % 2===0) {
+      count ++;
+    }
+  }
+  return count;
 }
 
-Siblings(["Gerard B.","Nyirarukundo Ch.","Yvette","Aimable" , "Benjamin" , "Reponse","Honette","Manzi"]);
+console.log(countingEven([1,2,3,4,5,6,7,8]));
+
+
+
+
+
+
+
 
 
 
